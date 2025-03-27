@@ -4,19 +4,10 @@ import tseslint from 'typescript-eslint';
 import js from '@eslint/js';
 import globals from 'globals';
 
-// import jsonParser from 'jsonc-eslint-parser';
-// import jsonc from 'eslint-plugin-jsonc';
 import markdown from '@eslint/markdown';
 
 export default tseslint.config(
     js.configs.recommended,
-    // ...jsonc.configs['flat/recommended-with-jsonc'],
-    // {
-    //     files: ['*.json', '*.jsonc', '*.json5'],
-    //     languageOptions: {
-    //         parser: jsonParser,
-    //     },
-    // },
     ...markdown.configs.recommended,
     tseslint.configs.recommended,
 
